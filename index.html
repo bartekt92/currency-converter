@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/wrapper.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="container__header">Kalkulator walut:</h2>
+        <div class="wrapper">
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Podaj dane:</legend>
+                    <div class="form__container">
+                        <p class="form__paragraph">
+                            <label class="form__label">
+                                Kwota: <input class="form__field js-amount" required type="number" min="0.01" value="1"
+                                    step="any" autofocus>
+                            </label>
+                            <label class="form__label">
+                                Waluta:
+                                <select class="form__field2  js-currency" name="currency">
+                                    <option value="zł">Złoty</option>
+                                    <option value="€" selected>Euro</option>
+                                    <option value="$">Dolar</option>
+                                </select>
+
+
+                            </label>
+
+
+                        </p>
+
+                        <p class="form__paragraph">
+                            <label class="form__label2">
+                                <span class="form__labelText">Aktualny kurs: 1 <strong
+                                        class="form__strong js-value1">€</strong> =</span>
+                                <input class="form__field js-rate" required type="number" min="0.01" placeholder="4.55"
+                                    step="any"> <strong class="form__strong js-value2">zł</strong>
+                            </label>
+
+                        </p>
+                        <p class="form__paragraph">
+                            <label class="form__label">
+                                Wynik: <input class="form__field js-result" required type="number" min="0.01"
+                                    step="any">
+                            </label>
+                            <label class="form__label">
+                                Waluta:
+                                <select class="form__field2 js-currency2" name="currency">
+                                    <option value="zł" selected>Złoty</option>
+                                    <option value="€">Euro</option>
+                                    <option value="$">Dolar</option>
+                                </select>
+                            </label>
+
+                        </p>
+
+
+
+
+                    </div>
+
+
+                </fieldset>
+
+            </form>
+            <button class="button js-button">&#8691</button>
+            <div class="form__alert js-alert"></div>
+        </div>
+        <p class="paragraph js-infoAlert">
+        </p>
+
+    </div>
+</body>
+
+</html>
