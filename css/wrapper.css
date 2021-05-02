@@ -1,11 +1,8 @@
 .wrapper{
-    max-width:600px;
-    width:100%;
-    margin: 0 auto;
-    display:inline-block;
+    max-width:500px;
+    display:flex;
 }
 .button{
-    height:50px;
-    margin:0 auto;
-    display:inline-block;
+    height:50px;    
+    align-self: center;
 }
