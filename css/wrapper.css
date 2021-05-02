@@ -1,8 +1,9 @@
 .wrapper{
-    max-width:480px;
+    max-width:510px;
     display:flex;
 }
 .button{
     height:50px;    
     align-self: center;
+    margin:10px;
 }
