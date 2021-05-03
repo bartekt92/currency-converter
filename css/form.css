@@ -94,3 +94,9 @@
     max-width: 150px;
     align-self: center;
 }
+
+@media (max-width: 767px) {
+    .form__alert {
+        margin-top: 10px;
+    }
+}
