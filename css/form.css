@@ -13,12 +13,14 @@
 .form__fieldset {
     border: 1px solid #2920206e;
     border-radius: 4px;
-    background-color: #fd252514;
-    color: #040a21;
+    background-color: rgb(42 45 66 / 42%);
+    color: black;
 }
 
 .form__legend {
-    color: #02211b;
+    color: black;
+    font-weight: bold;
+    font-size:large;
 }
 
 .form__labelText {
@@ -32,6 +34,12 @@
     padding: 2px;
     border: 1px solid #2920206e;
     border-radius: 4px;
+    background-color: rgb(42 45 66 / 42%);
+    color: white;
+}
+
+.form__field::placeholder {
+    color: rgba(243, 234, 234, 0.541);
 }
 
 .form__field2 {
@@ -40,6 +48,8 @@
     padding: 2px;
     border: 1px solid #2920206e;
     border-radius: 4px;
+    background-color: rgb(42 45 66 / 42%);
+    color: white;
 }
 
 .form__strong {
@@ -50,5 +60,4 @@
     max-width: 150px;
     width: 100%;
     align-self: center;
-
 }

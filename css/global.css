@@ -10,6 +10,10 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     background-color: #ead61a17;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .paragraph {
