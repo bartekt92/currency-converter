@@ -56,7 +56,7 @@ function checkCurrency2(firstCurrency, secondCurrency) {
         switch (secondCurrency.value) {
             case "zł": firstCurrency.value = "€";
                 break;
-            case "€": firstCurrencyvalue = "zł";
+            case "€": firstCurrency.value = "zł";
                 break;
             case "$": firstCurrency.value = "zł";
                 alert.innerText = `Chciałeś zamienić Dolary na Dolary??? Masz ten amerykanski feeling i vibe 😆`;
