@@ -55,25 +55,19 @@
             case "zł":
                 if (secondCurrency.value === "$") {
                     return rate = (enteredRate === 1) ? rateElement.value : 0.26;
-                } else {
-                    return rate = (enteredRate === 1) ? rateElement.value : 0.22;
                 }
+                return rate = (enteredRate === 1) ? rateElement.value : 0.22;
             case "€":
-
                 if (secondCurrency.value === "$") {
                     return rate = (enteredRate === 1) ? rateElement.value : 1.21;
-                } else {
-                    return rate = (enteredRate === 1) ? rateElement.value : 4.56;
                 }
-
+                return rate = (enteredRate === 1) ? rateElement.value : 4.56;
             case "$":
 
                 if (secondCurrency.value === "€") {
                     return rate = (enteredRate === 1) ? rateElement.value : 0.83;
                 }
-                else {
-                    return rate = (enteredRate === 1) ? rateElement.value : 3.78;
-                }
+                return rate = (enteredRate === 1) ? rateElement.value : 3.78;
         }
     };
     const calculateResult = () => {
