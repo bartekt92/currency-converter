@@ -31,7 +31,7 @@
     const button = document.querySelector(".js-button");
     button.addEventListener("click", changeRatesOnClick);
 
-    const checkFirstCurrency = (firstCurrency, secondCurrency) => {
+    const checkCurrency = (firstCurrency, secondCurrency) => {
         const alert = document.querySelector(".js-alert");
         alert.innerText = "";
         if (firstCurrency.value === secondCurrency.value) {
@@ -46,21 +46,7 @@
             }
         }
     };
-    const checkSecondCurrency = (firstCurrency, secondCurrency) => {
-        const alert = document.querySelector(".js-alert");
-        alert.innerText = "";
-        if (firstCurrency.value === secondCurrency.value) {
-            switch (secondCurrency.value) {
-                case "zł": firstCurrency.value = "€";
-                    break;
-                case "€": firstCurrency.value = "zł";
-                    break;
-                case "$": firstCurrency.value = "zł";
-                    alert.innerText = `Chciałeś zamienić Dolary na Dolary??? Masz ten amerykanski feeling i vibe 😆`;
-                    break;
-            }
-        }
-    };
+
     const checkRate = (firstCurrency, rateElement) => {
         switch (firstCurrency.value) {
             case "zł":
@@ -105,10 +91,10 @@
         firstCurrency.addEventListener("input", () => {
             enteredRate = 0;
             rateElement.value = "";
-            checkFirstCurrency(firstCurrency, secondCurrency);
+            checkCurrency(firstCurrency, secondCurrency);
         })
         secondCurrency.addEventListener("input", () => {
-            checkSecondCurrency(firstCurrency, secondCurrency);
+            checkCurrency(secondCurrency, firstCurrency);
         })
 
         rateElement.addEventListener("input", () => {
