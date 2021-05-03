@@ -35,6 +35,7 @@
         const containerElement = document.querySelector(".js-container");
         const alert = document.querySelector(".js-alert");
         alert.innerText = "";
+        containerElement.classList.remove("container--wider");
         if (firstCurrency.value === secondCurrency.value) {
             switch (firstCurrency.value) {
                 case "zł": secondCurrency.value = "€";
@@ -42,7 +43,7 @@
                 case "€": secondCurrency.value = "zł";
                     break;
                 case "$": secondCurrency.value = "zł";
-                    containerElement.classList.toggle("container--wider");
+                    containerElement.classList.add("container--wider");
                     alert.innerText = `Chciałeś zamienić Dolary na Dolary??? Masz ten amerykanski feeling i vibe 😆`;
                     break;
             }
@@ -107,6 +108,7 @@
         const form = document.querySelectorAll(".js-label");
         form.forEach(element => {
             element.addEventListener("input", () => {
+
                 alert.innerText = "";
                 checkRate(firstCurrency, rateElement);
                 logResult(rate, firstCurrency, secondCurrency, rateElement);
