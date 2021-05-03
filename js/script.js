@@ -8,14 +8,15 @@
     let rate = rateElement.value;
     const infoAlert = document.querySelector(".js-infoAlert");
 
-    const init = () => {
+    const welcome = () => {
         console.log("Witajcie programiści!");
+    }
+    const init = () => {
+        welcome();
         result.value = 4.56
         infoAlert.innerHTML = `<strong class="form__strong"> 1 € </strong>to w przeliczeniu: <strong class="form__strong"> 4.56 zł </strong>`;
     };
     init();
-
-
 
     const changeRatesOnClick = () => {
         alert.innerText = "";
