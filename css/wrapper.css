@@ -4,6 +4,8 @@
 }
 .button{
     height:50px;    
+    border: 1px solid #2920206e;
+    border-radius: 4px;
     align-self: center;
     margin:10px;
     background-color:rgb(42 45 66 / 42%);
