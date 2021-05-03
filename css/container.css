@@ -1,7 +1,11 @@
 .container {
-    max-width: 550px;
+    max-width: 382px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.container--wider {
+    max-width: 550px;
 }
 
 .container__header {
