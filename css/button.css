@@ -7,11 +7,7 @@
     margin: 10px;
     background-color: rgb(42 45 66 / 42%);
 }
-@media (max-width: 767px) {
-    .button {
-        margin: 3px;
-    }
-}
+
 
 .button:hover {
     background-color: #46464665;
