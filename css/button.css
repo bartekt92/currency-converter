@@ -1,17 +1,7 @@
-.wrapper {
-    max-width: 510px;
-    display: flex;
-}
-
-@media (max-width: 767px) {
-    .wrapper {
-        flex-wrap: wrap;
-    }
-}
-
 .button {
-    height: 50px;
+    height: 60px;
     border: 1px solid #2920206e;
+    grid-area:b;
     border-radius: 4px;
     align-self: center;
     margin: 10px;

@@ -2,12 +2,14 @@
     max-width: 300px;
     width: 100%;
     display: inline-block;
+    grid-area: c;
 }
 
 @media (max-width: 767px) {
     .form {
         max-width: 250px;
         width: 100%;
+        justify-self: center;
     }
 }
 
@@ -93,10 +95,23 @@
 .form__alert {
     max-width: 150px;
     align-self: center;
+    grid-area: a;
 }
 
 @media (max-width: 767px) {
     .form__alert {
-        margin-top: 10px;
+        grid-area: z;
+        align-self: start;
+    }
+}
+
+.infoAlert {
+    grid-area: f;
+    align-self: start;
+}
+
+@media (max-width: 767px) {
+    .infoAlert {
+        grid-area: f;
     }
 }
