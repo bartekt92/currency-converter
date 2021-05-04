@@ -4,6 +4,7 @@
     grid-area:b;
     border-radius: 4px;
     align-self: center;
+    max-width: 25px;
     margin: 10px;
     background-color: rgb(42 45 66 / 42%);
 }
