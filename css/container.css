@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 150px 300px 47px 150px;
+    grid-template-columns: 150px 300px 40px 150px;
     grid-template-rows: 200px 180px 40px 200px;
     grid-template-areas: ". h . ." ". c b a" ". f . ." ". z . .";
     align-items: center;
@@ -12,7 +12,7 @@
 
 @media (max-width: 767px) {
     .container {
-        grid-template-columns: 238px 47px;
+        grid-template-columns: 238px 40px;
         grid-template-rows: 200px 150px 60px 200px;
         grid-template-areas: "h ." "c b " "f . " "z .";
     }
