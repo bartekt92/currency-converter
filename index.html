@@ -31,7 +31,7 @@
                 <div class="form__container">
                     <p class="form__paragraph">
                         <label class="js-label">
-                            Kwota: <input class="form__field js-amount" required type="number" min="0.01" value="1"
+                            Kwota: <input class="form__field js-amount" required type="number" min="0.01" value="1" oninput="validity.valid||(value='');"
                                 step="any" autofocus>
                         </label>
                         <label class="js-label">
@@ -52,7 +52,7 @@
                         <label class="form__label2">
                             <span class="form__labelText">Aktualny kurs: 1 <strong
                                     class="form__strong js-value1">€</strong> =</span>
-                            <input class="form__field js-rate" required type="number" min="0.01" placeholder="4.56"
+                            <input class="form__field js-rate" required type="number" min="0.01" placeholder="4.56" oninput="validity.valid||(value='');"
                                 step="any"> <strong class="form__strong js-value2">zł</strong>
                         </label>
 
