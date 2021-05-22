@@ -9,7 +9,7 @@ Page works to convert currencies. It is posible to convert euros, dolars to zlot
 ## Used Technologies:
 + CSS
 + BEM
-+ Semaantic HTML
++ HTML
 + ES6 features
 ## Quick page preview:
 ![Quick page preview](https://github.com/bartekt92/currency-converter/blob/main/images/page-preview.jpg?raw=true)
